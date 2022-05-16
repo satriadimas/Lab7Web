@@ -19,8 +19,12 @@
 
 Buat folder Lab7Web pada root directory web server (c:\Laragon\www)
 
+![image](https://user-images.githubusercontent.com/20396585/168566174-ccae4d23-6146-4586-9469-1388d35f2247.png)
+
 Kemudian untuk mengakses direktory tersebut pada web server dengan mengakses URL:
 http://Lab7Web.test
+
+![image](https://user-images.githubusercontent.com/20396585/168566305-e546bcbb-9025-4e72-88fc-6f03e4028264.png)
 
 ## PHP DASAR
 
@@ -57,6 +61,7 @@ kode seperti berikut.
 
 Kemudian untuk mengakses hasilnya melalui URL:
 http://Lab7Web.test/php_dasar.php
+![image](https://user-images.githubusercontent.com/20396585/168566624-45428b35-84bf-40b9-95e4-d018ae62549d.png)
 
 ## Predefine Variable
 
@@ -84,7 +89,8 @@ Buat File PHP dengan nama latihan2.php
 ## OUTPUT
 
 Kemudian untuk mengakses hasilnya melalui URL:
-http://Lab7Web.test/Lab7Web/lab7web/latihan%202.php?nama=Dimas
+http://Lab7Web.test/Lab7Web/lab7web/latihan_2.php?nama=Dimas
+![image](https://user-images.githubusercontent.com/20396585/168566928-eb03f40e-e82e-4be2-b0e2-120b51aca8e0.png)
 
 ## Membuat Form Input
 
@@ -114,7 +120,8 @@ echo 'Selamat Datang ' . @$_POST['nama'];
 
 ## OUTPUT
 
-Kemudian Masukan Nama <br>
+Kemudian Masukan Nama
+![image](https://user-images.githubusercontent.com/20396585/168567174-31826cc2-c27d-4fd9-9981-b0ef24bb85b5.png)
 
 ## OPERATOR PADA PHP
 
@@ -142,6 +149,7 @@ Kemudian Masukan Nama <br>
 ```
 
 ## OUTPUT
+![image](https://user-images.githubusercontent.com/20396585/168567431-e8ad4178-3380-40ad-9296-c05259c1a89f.png)
 
 ## KONDISI IF
 
@@ -157,7 +165,7 @@ Kemudian Masukan Nama <br>
 <body>
     <h2>Kondisi IF</h2>
     <?php
-    $nama_hari = date("1");
+    $nama_hari = date("l");
     if ($nama_hari == "sunday") {
         echo "Mingggu";
     } elseif ($nama_hari == "Monday") {
@@ -171,6 +179,7 @@ Kemudian Masukan Nama <br>
 ```
 
 ## OUTPUT
+![image](https://user-images.githubusercontent.com/20396585/168568724-c7115c43-eff2-4d44-ba97-ddc877d7b14b.png)
 
 ## KONDISI SWITCH
 
@@ -186,7 +195,7 @@ Kemudian Masukan Nama <br>
 <body>
     <h2>Kondisi Switch</h2>
     <?php
-    $nama_hari = date("1");
+    $nama_hari = date("l");
     switch ($nama_hari) {
         case "sunday";
             echo "Minggu";
@@ -207,6 +216,7 @@ Kemudian Masukan Nama <br>
 ```
 
 ## OUTPUT
+![image](https://user-images.githubusercontent.com/20396585/168568595-648c62a9-6d97-42bf-bb4b-e982eabbf3ba.png)
 
 ## PERULANGAN FOR
 
@@ -226,7 +236,7 @@ Kemudian Masukan Nama <br>
     for ($i=1; $i<=10; $i++) {
         echo "perulangan ke:" . $i . '<br />';
     }
-
+    echo "<br />";
     echo "perulangan menurun dari 10 ke 1 <br />";
     for ($i=10; $i>=1; $i--) {
         echo "perulangan ke: " . $i . '<br />';
@@ -237,6 +247,7 @@ Kemudian Masukan Nama <br>
 ```
 
 ## OUTPU
+![image](https://user-images.githubusercontent.com/20396585/168569158-975a5ed1-b4eb-4f66-95e0-57d93324fa23.png)
 
 ## PERULANGAN WHILE
 
@@ -264,6 +275,7 @@ Kemudian Masukan Nama <br>
 ```
 
 ## OUTPUT
+![image](https://user-images.githubusercontent.com/20396585/168569232-11454279-b30f-4a06-baeb-942a080326c8.png)
 
 ## PERULANGAN DOWHILE
 
@@ -291,10 +303,11 @@ Kemudian Masukan Nama <br>
 ```
 
 ## OUTPUT
+![image](https://user-images.githubusercontent.com/20396585/168569287-f8f021cc-9a16-49d0-a0be-66f164e5fca9.png)
 
 ## TUGAS
 
-![Screenshot (270)](https://user-images.githubusercontent.com/73010098/168458673-1cdeecb8-b93d-4995-9535-4264ca6e5235.png)
+![image](https://user-images.githubusercontent.com/20396585/168565811-f4e3d4f7-0feb-476f-993c-61d5f67a244d.png)
 
 Buatlah File PHP dengan nama form_input_data.php seperti contoh dibawah ini :
 
@@ -306,6 +319,12 @@ Buatlah File PHP dengan nama form_input_data.php seperti contoh dibawah ini :
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form input data</title>
+
+    <style>
+        div {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <h2>Data Diri</h2>
@@ -323,19 +342,17 @@ Buatlah File PHP dengan nama form_input_data.php seperti contoh dibawah ini :
         <div>
             <label>Pekerjaan :</label>
             <select name="pekerjaan">
-                <option value="Web Developer">Web Developer</option>
-                <option value="Karyawan Swasta">Karyawan Swasta</option>
-                <option value="Guru">Guru</option>
-                <option value="Lainnya">Lainnya</option>
+                <option value="Front-End Developer">Front-End Developer</option>
+                <option value="Back-End Developer">Back-End Developer</option>
+                <option value="Android Developer">Android Developer</option>
             </select>
         </div>
         <div>
             <label>Gaji :</label>
             <select name="gaji">
-                <option value="2.000.000 s/d 3.500.000">2.000.000 s/d 3.500.000</option>
-                <option value="3.500.000 s/d 7.000.000">3.500.000 s/d 7.000.000</option>
-                <option value="7.000.000 s/d 10.000.000">7.000.000 s/d 10.000.000</option>
-                <option value="Lainnya">Lainnya</option>
+                <option value="4.000.000 s/d 6.000.000">4.000.000 s/d 6.000.000</option>
+                <option value="6.000.000 s/d 8.000.000">6.000.000 s/d 8.000.000</option>
+                <option value="8.000.000 s/d 15.000.000">8.000.000 s/d 15.000.000</option>
             </select>
         </div>
         <div>
@@ -372,5 +389,7 @@ Buatlah File PHP dengan nama form_input_data.php seperti contoh dibawah ini :
 ## OUTPUT
 
 Lalu Isi Form dibawah ini
+![image](https://user-images.githubusercontent.com/20396585/168569549-00650988-bade-4afb-a1a9-42ca76fb3bd8.png)
 
 Maka akan Muncul hasil Seperti Dibawah ini
+![image](https://user-images.githubusercontent.com/20396585/168569735-e4871f61-53f1-470b-9d6a-9c8012591c8a.png)
