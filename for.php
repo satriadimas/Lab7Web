@@ -13,7 +13,7 @@
     for ($i=1; $i<=10; $i++) {
         echo "perulangan ke:" . $i . '<br />';
     }
-
+    echo "<br />";
     echo "perulangan menurun dari 10 ke 1 <br />";
     for ($i=10; $i>=1; $i--) {
         echo "perulangan ke: " . $i . '<br />';

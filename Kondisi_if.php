@@ -9,7 +9,7 @@
 <body>
     <h2>Kondisi IF</h2>
     <?php
-    $nama_hari = date("1");
+    $nama_hari = date("l");
     if ($nama_hari == "sunday") {
         echo "Mingggu";
     } elseif ($nama_hari == "Monday") {
